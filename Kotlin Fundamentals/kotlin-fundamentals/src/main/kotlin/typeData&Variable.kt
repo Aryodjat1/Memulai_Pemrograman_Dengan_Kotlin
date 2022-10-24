@@ -15,7 +15,7 @@ fun main() {
 
 //    Operator + On Print
     val firstWord = "Dicoding "
-    val lastWord = "Academy"
+    val lastWord = "Academy"gi
     print(firstWord + lastWord)
     /*
    output: Dicoding Academy
@@ -25,6 +25,7 @@ fun main() {
     val valueA: Int = 10
     val valueB = 20
     print(valueA + valueB)
+
     /*
        output: 30
     */
