@@ -29,8 +29,22 @@ package com.dicoding.exam.latihan3
  *  • Map<String, String>
  *
  */
-fun <T> checkType(args: T): String {
-    return ""
+fun <T>  checkType(args: T ): Any  {
+    if (args is Int){
+        return "Yes! it's Integer"
+    }else if (args is String){
+        return "Yes! it's String"
+    }else if (args is Boolean){
+        return "Yes! it's Boolean"
+    }else if (args is Double){
+        return "Yes! it's Double"
+    }else if (args == listOf<String>()){
+        return "Yes! it's List"
+    }else if (args == mapOf<String, String>()){
+        return "Yes! it's Map"
+    }else{
+        return ""
+    }
 }
 
 fun main() {

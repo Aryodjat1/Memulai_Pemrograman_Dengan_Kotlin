@@ -12,6 +12,8 @@
 
 package com.dicoding.exam.latihan2
 
+import sun.invoke.util.ValueConversions
+
 /**
  *  TODO 1
  *  Sesuaikan fungsi di bawah ini agar dapat mengembalikkan nilai dengan rumus
@@ -22,7 +24,8 @@ package com.dicoding.exam.latihan2
  *  Jika valueC bernilai null, silakan tetapkan nilai 50 sebagai nilai default-nya
  */
 fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    return 0
+    val nilaiC = valueC ?: 50
+    return valueA + (valueB - nilaiC)
 }
 
 /**
@@ -32,7 +35,7 @@ fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
  *      Result is ${result}
  */
 fun result(result: Int): String {
-    return ""
+    return "Result is ${result}"
 }
 
 fun main() {
